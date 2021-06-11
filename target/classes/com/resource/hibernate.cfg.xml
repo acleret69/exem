@@ -5,7 +5,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3308/TD_Hibernate_Git?serverTimezone=UTC</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3308/Exam?serverTimezone=UTC</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     	<mapping class="com.Model.Chambre" />
     	<mapping class="com.Model.Directeur"/>

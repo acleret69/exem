@@ -32,6 +32,46 @@ public class Directeur {
 	@JoinColumn(name="Salarie_id")
 	private Set<Salarie> salarie;
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public Set<Salarie> getSalarie() {
+		return salarie;
+	}
+
+	public void setSalarie(Set<Salarie> salarie) {
+		this.salarie = salarie;
+	}
+
+	public Hotel getHotel() {
+		return hotel;
+	}
+
+	public void setHotel(Hotel hotel) {
+		this.hotel = hotel;
+	}
+
 	@OneToOne
 	@JoinColumn(name="hotel_id")
 	private Hotel hotel;

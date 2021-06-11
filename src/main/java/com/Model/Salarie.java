@@ -30,5 +30,58 @@ public class Salarie {
 	
 	@OneToOne(mappedBy = "Directeur")
 	private Directeur directeur;
+
+	public Salarie(String string, String string2, int i, String string3) {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public String getSalaire() {
+		return salaire;
+	}
+
+	public void setSalaire(String salaire) {
+		this.salaire = salaire;
+	}
+
+	public String getExperience() {
+		return experience;
+	}
+
+	public void setExperience(String experience) {
+		this.experience = experience;
+	}
+
+	public Directeur getDirecteur() {
+		return directeur;
+	}
+
+	public void setDirecteur(Directeur directeur) {
+		this.directeur = directeur;
+	}
 	
 }

@@ -24,4 +24,48 @@ public class Chambre {
 	
 	@OneToOne(mappedBy = "Chambre")
 	private Chambre chambre;
+
+	public Chambre(String string, String string2, String string3, String string4) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getNum_chambre() {
+		return num_chambre;
+	}
+
+	public void setNum_chambre(int num_chambre) {
+		this.num_chambre = num_chambre;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getEtage() {
+		return etage;
+	}
+
+	public void setEtage(String etage) {
+		this.etage = etage;
+	}
+
+	public Chambre getChambre() {
+		return chambre;
+	}
+
+	public void setChambre(Chambre chambre) {
+		this.chambre = chambre;
+	}
 }
