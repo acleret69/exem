@@ -29,10 +29,10 @@ public class Directeur {
 	private String prenom;
 	
 	@OneToMany(cascade=CascadeType.ALL)
-	@JoinColumn(name="client_id")
-	private Set<Produit> produits;
+	@JoinColumn(name="Salarie_id")
+	private Set<Salarie> salarie;
 	
 	@OneToOne
-	@JoinColumn(name="compte_id")
-	private Compte compte;
+	@JoinColumn(name="hotel_id")
+	private Hotel hotel;
 }

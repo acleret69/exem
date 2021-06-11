@@ -1,4 +1,4 @@
-package com.TD_Hibernate_Git;
+package com.Exame_java;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

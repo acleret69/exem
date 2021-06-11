@@ -2,6 +2,13 @@ package com.Model;
 
 import java.util.Set;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
 public class Salarie {
 
 	@Id
@@ -15,11 +22,13 @@ public class Salarie {
 	@Column(name = "prenom", nullable = true, unique = false, length = 50)
 	private String prenom;
 	
-	@OneToMany(cascade=CascadeType.ALL)
-	@JoinColumn(name="client_id")
-	private Set<Produit> produits;
+	@Column(name = "salaire", nullable = true, unique = false, length = 50)
+	private String salaire;
 	
-	@OneToOne
-	@JoinColumn(name="compte_id")
-	private Compte compte;
+	@Column(name = "experience", nullable = true, unique = false, length = 50)
+	private String experience;
+	
+	@OneToOne(mappedBy = "Directeur")
+	private Directeur directeur;
+	
 }
